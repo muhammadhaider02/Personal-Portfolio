@@ -75,60 +75,34 @@ const Contact = () => {
   const [showToast, setShowToast] = useState(false);
 
   useEffect(() => {
-    if (prefersReducedMotion) {
-      return;
+    if (!prefersReducedMotion) {
+      sr.reveal(revealContainer.current, srConfig());
     }
-
-    sr.reveal(revealContainer.current, srConfig());
-  }, []);
+  }, [prefersReducedMotion]);
 
   const handleEmailClick = (e) => {
     e.preventDefault();
 
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard
-        .writeText(email)
+    if (typeof navigator !== 'undefined' && navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(email)
         .then(() => {
           setShowToast(true);
           setTimeout(() => {
             setShowToast(false);
           }, 3000);
         })
-        .catch((err) => {
-          console.error('Failed to copy email:', err);
-        });
-    } else {
-      const textArea = document.createElement('textarea');
-      textArea.value = email;
-      textArea.style.position = 'fixed';
-      textArea.style.left = '-999999px';
-      textArea.style.top = '-999999px';
-      document.body.appendChild(textArea);
-      textArea.focus();
-      textArea.select();
-
-      try {
-        document.execCommand('copy');
-        setShowToast(true);
-        setTimeout(() => {
-          setShowToast(false);
-        }, 3000);
-      } catch (err) {
-        console.error('Fallback copy failed:', err);
-      }
-
-      document.body.removeChild(textArea);
+        .catch(() => { });
     }
 
-    window.location.href = `mailto:${email}`;
+    if (typeof window !== 'undefined') {
+      window.location.href = `mailto:${email}`;
+    }
   };
 
   return (
     <StyledContactSection id="contact" ref={revealContainer}>
       <h2 className="numbered-heading overline">What's Next?</h2>
-
       <h2 className="title">Get In Touch</h2>
-
       <p>
         I'm always interested in hearing about new opportunities in software development
         and AI engineering. Whether you're hiring, have an interesting project, or just
