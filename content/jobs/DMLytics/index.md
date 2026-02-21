@@ -7,8 +7,7 @@ range: 'February - May 2025'
 url: 'https://dmlytics.net/'
 ---
 
-- Built an orthomosaic processing pipeline on GCP handling 300GB+ of aerial imagery with GDAL for geospatial data transformation
-- Implemented EXIF/RTK georeferencing from GPS metadata and ground sampling distance mapping using Rasterio for accurate spatial alignment
-- Applied image cleanup and alignment techniques in OpenCV to improve tile quality before mosaicking operations
-- Automated GeoTIFF generation with compression and tiling optimizations to produce Pix4D-ready photogrammetry outputs
-- Streamlined post-processing workflows through batch-zipping and cloud-sync for fast GIS integration
+- Built an orthomosaic pipeline on GCP processing 300GB+ of aerial imagery end-to-end using GDAL.
+- Implemented EXIF/RTK georeferencing from GPS metadata and GSD mapping with Rasterio for accuracy.
+- Applied OpenCV image cleanup and alignment to improve tile quality before mosaicking and GeoTIFF export.
+- Automated Pix4D-ready GeoTIFF generation with compression, tiling and cloud-sync for GIS integration.

@@ -61,13 +61,12 @@ const Hero = () => {
 
   const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">Haider Akbar.</h2>;
-  const three = <h3 className="big-heading">I build intelligent software.</h3>;
+  const three = <h3 className="big-heading">I build intelligent systems.</h3>;
   const four = (
     <>
       <p>
-        I’m a software developer and AI engineer specializing in LLMs,
-        retrieval pipelines and modern full-stack tooling. I build scalable,
-        human-centered products powered by AI and automation.
+        I'm an AI engineer specializing in agentic systems, LLM pipelines and workflow automation. I
+        build intelligent, scalable products that replace repetitive decision-making at scale
       </p>
     </>
   );

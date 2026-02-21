@@ -60,9 +60,9 @@ const Contact = () => {
       <h2 className="title">Get In Touch</h2>
 
       <p>
-        I'm always interested in hearing about new opportunities in software development and AI
-        engineering. Whether you're hiring, have an interesting project, or just want to connect,
-        feel free to reach out!
+        I'm always open to new opportunities in AI engineering and intelligent systems. Whether
+        you're hiring, building something that needs an AI layer, or just want to connect, feel free
+        to reach out!
       </p>
 
       <a className="email-link" href={`mailto:${email}`}>
