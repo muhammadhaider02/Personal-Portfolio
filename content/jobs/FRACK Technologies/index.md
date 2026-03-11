@@ -7,6 +7,6 @@ range: 'September - October 2024'
 url: 'https://fracktechnologies.com/'
 ---
 
-- Built a FER indexing pipeline over images and annotations creating stratified train/val parquet splits for 8 classes.
-- Fine-tuned ResNet50 and EfficientNet in PyTorch for emotion classification and valence-arousal regression.
-- Configured AdamW, LR scheduling, mixed precision and early stopping evaluated on accuracy, F1 and RMSE.
+- Built a Siamese BiGRU encoder with additive attention for binary legal clause similarity on 10K+ pairs.
+- Implemented hash-based stratified splitting and TF-IDF hard negative mining to prevent data leakage.
+- Applied AdamW, ReduceLROnPlateau, mixed precision and early stopping achieving 0.8498 F1-score.

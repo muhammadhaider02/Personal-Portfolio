@@ -3,7 +3,7 @@ date: '2025-11-30'
 title: 'Software Developer'
 company: 'Epistemy'
 location: 'London, UK (Remote)'
-range: 'September - November 2025'
+range: 'September - Feb 2026'
 url: 'https://epistemy.io/'
 ---
 

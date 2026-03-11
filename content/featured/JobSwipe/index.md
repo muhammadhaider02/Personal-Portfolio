@@ -10,7 +10,7 @@ tech:
   - Supabase
   - FAISS
   - Redis
-  - LLMs
+  - HuggingFace
 ---
 
-A job recommendation platform with a Reels-style swipe interface built on Flask and Next.js. Implements NLP pipelines to extract skills from resume uploads and uses Sentence Transformers with FAISS for semantic candidate-role matching. Features Redis caching and background daemon threads for optimized LLM-based parsing, enabling automated generation of tailored applications for matched positions with Supabase authentication.
+A multi-agent AI career platform featuring four specialized agents across the full application pipeline, built with a Tinder-style swipe interface. Implements a Scraper Agent using Scrapling and a Matching Agent with FAISS and Sentence Transformers for semantic role discovery. Engineers an Optimization Agent leveraging RAG with Mistral LLM to tailor resumes and generate cover letters, with each right swipe automatically triggering end-to-end resume optimization and job application.

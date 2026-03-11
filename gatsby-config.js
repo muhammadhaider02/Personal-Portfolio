@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: 'Haider Akbar',
     description:
-      'Haider Akbar is a software developer and AI engineer specializing in LLMs, retrieval pipelines and modern full-stack development. Building scalable, human-centered products powered by AI and automation.',
+      'Haider Akbar is an AI engineer specializing in agentic systems, LLM pipelines and workflow automation. Building intelligent, scalable products that replace repetitive decision-making at scale.',
     siteUrl: 'https://www.haiderakbar.dev', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
   },

@@ -3,7 +3,7 @@ date: '2025-05-31'
 title: 'AI Engineer'
 company: 'DMLytics'
 location: 'Islamabad, Pakistan'
-range: 'February - May 2025'
+range: 'February - Jul 2025'
 url: 'https://dmlytics.net/'
 ---
 

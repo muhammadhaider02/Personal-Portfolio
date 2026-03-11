@@ -132,7 +132,7 @@ const About = () => {
     'RAG',
     'TypeScript',
     'FastAPI',
-    'n8n',
+    'AWS',
     'Docker',
   ];
 
@@ -153,7 +153,7 @@ const About = () => {
 
             <p>
               Fast-forward to today, I've worked at startups and remote teams across Pakistan and
-              Europe. My focus these days is building agentic AI systems and workflow automation —
+              Europe. My focus these days is building agentic AI systems and workflow automation,
               connecting LLMs, APIs and data pipelines to replace repetitive decision-making at
               scale, from MVPs for early-stage products to system integrations that unify platforms
               into seamless automated workflows.
