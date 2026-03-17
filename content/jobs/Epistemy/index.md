@@ -7,7 +7,7 @@ range: 'September - Feb 2026'
 url: 'https://epistemy.io/'
 ---
 
-- Architected and deployed a full-stack AI tutoring platform in TypeScript (Next.js + NestJS) with Supabase and S3.
-- Automated video ingestion and transcription via Deepgram ASR, BullMQ background jobs and LangGraph chunking.
-- Built RAG pipelines over vectorized transcripts to generate summaries, quizzes and personalized feedback.
-- Owned CI/CD monorepo deployment to Vercel with LangSmith tracing and JWT-based role access control.
+- Built a full-stack platform across Next.js, NestJS and Python (LangGraph) with Docker, Supabase and S3.
+- Automated video transcription via Deepgram ASR, with BullMQ/Redis handling background job processing.
+- Designed self-correcting agentic workflows in LangGraph for content generation and personalized feedback.
+- Maintained the full CI/CD pipeline via GitHub Actions with AWS EC2 deployment and LangSmith tracing.

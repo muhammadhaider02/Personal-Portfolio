@@ -6,7 +6,7 @@ github: ''
 external: ''
 tech:
   - Next.js
-  - Flask
+  - Python
   - Supabase
   - FAISS
   - Redis
