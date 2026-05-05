@@ -7,7 +7,9 @@ range: 'September - Feb 2026'
 url: 'https://epistemy.io/'
 ---
 
-- Built a full-stack platform across Next.js, NestJS and Python (LangGraph) with Docker, Supabase and S3.
-- Automated video transcription via Deepgram ASR, with BullMQ/Redis handling background job processing.
-- Designed self-correcting agentic workflows in LangGraph for content generation and personalized feedback.
-- Maintained the full CI/CD pipeline via GitHub Actions with AWS EC2 deployment and LangSmith tracing.
+- Reduced teacher review time by 58% by automating the analytics pipeline from ingestion to delivery.
+- Enabled cross-session performance context across 10+ sessions by designing a Memory agent.
+- Lowered LLM API costs by 39% by implementing a Critic agent to filter low-confidence outputs.
+- Delivered full analytics suite within 2 minutes by parallelizing chunks and agent execution.
+- Shortened debugging cycles by 73% via LangSmith tracing across all production pipeline sessions.
+- Sustained 200+ concurrent agent jobs with 99%+ uptime via BullMQ and Redis on AWS EC2.

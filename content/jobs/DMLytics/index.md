@@ -7,7 +7,8 @@ range: 'February - Jul 2025'
 url: 'https://dmlytics.net/'
 ---
 
-- Built an orthomosaic pipeline on GCP processing 300GB+ of aerial imagery end-to-end using GDAL.
-- Implemented EXIF/RTK georeferencing from GPS metadata and GSD mapping with Rasterio for accuracy.
-- Applied OpenCV image cleanup and alignment to improve tile quality before mosaicking and GeoTIFF export.
-- Automated Pix4D-ready GeoTIFF generation with compression, tiling and cloud-sync for GIS integration.
+- Lowered flight planning time by 57% by building flight plan generation from a user-drawn boundary.
+- Accelerated preprocessing of 300GB+ imagery by 61% by automating the full ingestion pipeline on GCP.
+- Reduced misaligned tiles by 78% by engineering image alignment and tilt correction before mapping.
+- Shortened map assembly time by 40% by orchestrating map stitching across drone image captures.
+- Enabled crop analytics across 500+ acres by handing off processed maps and tiles to the ML team.

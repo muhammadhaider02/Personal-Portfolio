@@ -10,7 +10,7 @@ tech:
   - Supabase
   - FAISS
   - Redis
-  - HuggingFace
+  - Scrapling
 ---
 
-A multi-agent AI career platform featuring four specialized agents across the full application pipeline, built with a Tinder-style swipe interface. Implements a Scraper Agent using Scrapling and a Matching Agent with FAISS and Sentence Transformers for semantic role discovery. Engineers an Optimization Agent leveraging RAG with Mistral LLM to tailor resumes and generate cover letters, with each right swipe automatically triggering end-to-end resume optimization and job application.
+An AI career platform that automates the full job application pipeline from scraping to submission, built with a Tinder-style swipe interface. A Scraper Agent pulls live listings across 4 portals via Scrapling bypassing anti-bot systems, while a three-stage Matching Agent surfaces top matches in under 550ms across 10K+ listings. A single right swipe triggers an Optimization Agent that tailors resumes against live job descriptions in under 10 seconds and submits automatically.

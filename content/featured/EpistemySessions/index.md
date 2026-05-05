@@ -10,8 +10,8 @@ tech:
   - Python
   - LangGraph
   - Supabase
-  - S3
+  - Redis
   - EC2
 ---
 
-An AI tutoring platform built with Next.js, NestJS and Python (LangGraph), containerized with Docker, backed by Supabase, S3 and deployed to AWS EC2. Automates video transcription via Deepgram ASR with BullMQ/Redis handling background jobs. Implements self-correcting LangGraph workflows to generate session summaries, quizzes and personalized feedback. Includes a full CI/CD pipeline via GitHub Actions with LangSmith tracing for agent monitoring.
+An AI tutoring platform built with Next.js, NestJS and Python (LangGraph), containerized with Docker, backed by Supabase, S3 and deployed to AWS EC2. Automates the full session analytics pipeline from ingestion to delivery, cutting teacher review time by 58% across 200+ concurrent jobs at 99%+ uptime via BullMQ and Redis. Powered by a 9-agent LangGraph system with a Memory agent for cross-session context and LangSmith tracing across all pipeline sessions.

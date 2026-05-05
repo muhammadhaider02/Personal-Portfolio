@@ -7,6 +7,6 @@ range: 'September - October 2024'
 url: 'https://fracktechnologies.com/'
 ---
 
-- Built a Siamese BiGRU encoder with additive attention for binary legal clause similarity on 10K+ pairs.
-- Implemented hash-based stratified splitting and TF-IDF hard negative mining to prevent data leakage.
-- Applied AdamW, ReduceLROnPlateau, mixed precision and early stopping achieving 0.8498 F1-score.
+- Reduced training time by 66% over the BiLSTM baseline by replacing max-pooling with learned weighting.
+- Achieved 0.8498 F1 on 14K+ legal clause pairs by building a Siamese BiGRU encoder with additive attention.
+- Prevented data leakage across 10K+ pairs by implementing hash-based splitting with TF-IDF hard negatives.

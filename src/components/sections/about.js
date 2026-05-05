@@ -125,16 +125,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = [
-    'Python',
-    'PyTorch',
-    'LangGraph',
-    'RAG',
-    'TypeScript',
-    'FastAPI',
-    'AWS',
-    'Docker',
-  ];
+  const skills = ['Python', 'n8n', 'LangChain', 'LangGraph', 'RAG', 'TypeScript', 'FastAPI', 'AWS'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -153,7 +144,7 @@ const About = () => {
 
             <p>
               Fast-forward to today, I've worked at startups and remote teams across Pakistan and
-              Europe. My focus these days is building agentic AI systems and workflow automation,
+              Europe. My focus these days is building workflow automation and agentic AI systems,
               connecting LLMs, APIs and data pipelines to replace repetitive decision-making at
               scale, from MVPs for early-stage products to system integrations that unify platforms
               into seamless automated workflows.
