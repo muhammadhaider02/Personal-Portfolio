@@ -1,11 +1,11 @@
 {
-  "name": "v4",
-  "description": "Personal Website V4",
+  "name": "personal-portfolio",
+  "description": "Personal portfolio of Haider Akbar — AI engineer. Based on Brittany Chiang's v4 design (MIT).",
   "version": "1.0.0",
-  "author": "Brittany Chiang <brittany.chiang@gmail.com>",
+  "author": "Muhammad Haider Akbar <muhammadhaiderakbar@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bchiang7/v4"
+    "url": "https://github.com/muhammadhaider02/Personal-Portfolio"
   },
   "keywords": [
     "gatsby"

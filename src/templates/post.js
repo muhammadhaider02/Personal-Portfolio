@@ -56,7 +56,9 @@ const PostTemplate = ({ data, location }) => {
 
   return (
     <Layout location={location}>
-      <Helmet title={title} />
+      <Helmet title={title}>
+        <meta name="robots" content="noindex, nofollow" />
+      </Helmet>
 
       <StyledPostContainer>
         <span className="breadcrumb">

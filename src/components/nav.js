@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
@@ -7,6 +7,7 @@ import { navLinks } from '@config';
 import { loaderDelay } from '@utils';
 import { useScrollDirection, usePrefersReducedMotion } from '@hooks';
 import { Menu } from '@components';
+import LoaderContext from '@components/loaderContext';
 import { IconLogo, IconHex } from '@components/icons';
 
 const StyledHeader = styled.header`
@@ -152,6 +153,7 @@ const StyledLinks = styled.div`
 
 const Nav = ({ isHome }) => {
   const [isMounted, setIsMounted] = useState(!isHome);
+  const isLoaderActive = useContext(LoaderContext);
   const scrollDirection = useScrollDirection('down');
   const [scrolledToTop, setScrolledToTop] = useState(true);
   const prefersReducedMotion = usePrefersReducedMotion();
@@ -161,7 +163,12 @@ const Nav = ({ isHome }) => {
   };
 
   useEffect(() => {
-    if (prefersReducedMotion) {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    if (prefersReducedMotion || isLoaderActive) {
       return;
     }
 
@@ -169,13 +176,8 @@ const Nav = ({ isHome }) => {
       setIsMounted(true);
     }, 100);
 
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      clearTimeout(timeout);
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+    return () => clearTimeout(timeout);
+  }, [isLoaderActive, prefersReducedMotion]);
 
   const timeout = isHome ? loaderDelay : 0;
   const fadeClass = isHome ? 'fade' : '';

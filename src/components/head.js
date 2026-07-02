@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { useLocation } from '@reach/router';
 import { useStaticQuery, graphql } from 'gatsby';
+import { email, socialMedia, googleAnalyticsID } from '@config';
 
 // https://www.gatsbyjs.com/docs/add-seo-component/
 
@@ -24,12 +25,7 @@ const Head = ({ title, description, image }) => {
     `,
   );
 
-  const {
-    defaultTitle,
-    defaultDescription,
-    siteUrl,
-    defaultImage,
-  } = site.siteMetadata;
+  const { defaultTitle, defaultDescription, siteUrl, defaultImage } = site.siteMetadata;
 
   const seo = {
     title: title || defaultTitle,
@@ -38,9 +34,25 @@ const Head = ({ title, description, image }) => {
     url: `${siteUrl}${pathname}`,
   };
 
+  const structuredData = JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: defaultTitle,
+    url: siteUrl,
+    image: seo.image,
+    jobTitle: 'AI Engineer',
+    description: defaultDescription,
+    email: `mailto:${email}`,
+    sameAs: socialMedia.map(({ url }) => url),
+  });
+
+  const isProduction = process.env.NODE_ENV === 'production';
+
   return (
     <Helmet title={title} defaultTitle={seo.title} titleTemplate={`%s | ${defaultTitle}`}>
       <html lang="en" />
+
+      <link rel="canonical" href={seo.url} />
 
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
@@ -51,7 +63,26 @@ const Head = ({ title, description, image }) => {
       <meta property="og:url" content={seo.url} />
       <meta property="og:type" content="website" />
 
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={seo.title} />
+      <meta name="twitter:description" content={seo.description} />
+      <meta name="twitter:image" content={seo.image} />
+
       <meta name="google-site-verification" content="DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk" />
+
+      <script type="application/ld+json">{structuredData}</script>
+
+      {isProduction && (
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsID}`} />
+      )}
+      {isProduction && (
+        <script>
+          {`window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${googleAnalyticsID}', { anonymize_ip: true });`}
+        </script>
+      )}
     </Helmet>
   );
 };

@@ -7,6 +7,23 @@
 const path = require('path');
 const _ = require('lodash');
 
+// content/posts can be empty, so the post-only frontmatter fields (slug, tags,
+// draft) must be declared explicitly — schema inference only adds a field when
+// at least one document uses it, and the page queries reference these.
+exports.createSchemaCustomization = ({ actions }) => {
+  actions.createTypes(`
+    type MarkdownRemark implements Node {
+      frontmatter: MarkdownRemarkFrontmatter
+    }
+    type MarkdownRemarkFrontmatter {
+      slug: String
+      tags: [String]
+      draft: Boolean
+      description: String
+    }
+  `);
+};
+
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
   const postTemplate = path.resolve(`src/templates/post.js`);

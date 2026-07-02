@@ -51,7 +51,9 @@ const TagTemplate = ({ pageContext, data, location }) => {
 
   return (
     <Layout location={location}>
-      <Helmet title={`Tagged: #${tag}`} />
+      <Helmet title={`Tagged: #${tag}`}>
+        <meta name="robots" content="noindex, nofollow" />
+      </Helmet>
 
       <StyledTagsContainer>
         <span className="breadcrumb">

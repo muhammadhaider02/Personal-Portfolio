@@ -1,27 +1,17 @@
 module.exports = {
   email: 'muhammadhaiderakbar@gmail.com',
 
+  googleAnalyticsID: 'G-VMC7KV6880',
+
   socialMedia: [
     {
       name: 'GitHub',
       url: 'https://github.com/muhammadhaider02',
     },
-    // {
-    //   name: 'Instagram',
-    //   url: 'https://www.instagram.com/bchiang7',
-    // },
-    // {
-    //   name: 'Twitter',
-    //   url: 'https://twitter.com/bchiang7',
-    // },
     {
       name: 'Linkedin',
       url: 'https://www.linkedin.com/in/haiderakbar',
     },
-    // {
-    //   name: 'Codepen',
-    //   url: 'https://codepen.io/bchiang7',
-    // },
   ],
 
   navLinks: [

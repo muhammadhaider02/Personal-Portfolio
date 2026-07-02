@@ -38,7 +38,9 @@ const TagsPage = ({
   location,
 }) => (
   <Layout location={location}>
-    <Helmet title="Tags" />
+    <Helmet title="Tags">
+      <meta name="robots" content="noindex, nofollow" />
+    </Helmet>
 
     <StyledTagsContainer>
       <span className="breadcrumb">

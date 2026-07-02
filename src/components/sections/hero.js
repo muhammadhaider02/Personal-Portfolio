@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
+import LoaderContext from '@components/loaderContext';
 import { navDelay, loaderDelay } from '@utils';
 import { usePrefersReducedMotion } from '@hooks';
 
@@ -48,16 +49,17 @@ const StyledHeroSection = styled.section`
 
 const Hero = () => {
   const [isMounted, setIsMounted] = useState(false);
+  const isLoaderActive = useContext(LoaderContext);
   const prefersReducedMotion = usePrefersReducedMotion();
 
   useEffect(() => {
-    if (prefersReducedMotion) {
+    if (prefersReducedMotion || isLoaderActive) {
       return;
     }
 
     const timeout = setTimeout(() => setIsMounted(true), navDelay);
     return () => clearTimeout(timeout);
-  }, []);
+  }, [isLoaderActive, prefersReducedMotion]);
 
   const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">Haider Akbar.</h2>;

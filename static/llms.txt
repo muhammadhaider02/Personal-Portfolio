@@ -1,0 +1,28 @@
+# Haider Akbar
+
+> Haider Akbar (Muhammad Haider Akbar) is an AI engineer specializing in workflow automation, LLM integrations, and agentic systems. He builds intelligent, scalable products that replace repetitive decision-making at scale — from MVPs for early-stage products to system integrations that unify platforms into seamless automated workflows.
+
+Technologies he works with most: Python, n8n, LangChain, LangGraph, RAG, TypeScript, FastAPI, AWS.
+
+## Experience
+
+- **Software Developer — Epistemy** (London, UK, remote; Sep 2025 – Feb 2026): Automated a teaching analytics pipeline end to end (58% less teacher review time), designed a Memory agent for cross-session performance context, and cut LLM API costs 39% with a Critic agent that filters low-confidence outputs.
+- **AI Engineer — DMLytics** (Islamabad, Pakistan; Feb – Jul 2025): Built flight plan generation from user-drawn boundaries (57% faster planning), automated ingestion of 300GB+ imagery on GCP (61% faster preprocessing), and engineered image alignment/tilt correction (78% fewer misaligned tiles).
+- **AI Intern — FRACK Technologies** (Islamabad, Pakistan; Sep – Oct 2024): Built a Siamese BiGRU encoder with additive attention reaching 0.8498 F1 on 14K+ legal clause pairs, cutting training time 66% over a BiLSTM baseline.
+
+## Featured Projects
+
+- **Epistemy Sessions**: AI tutoring platform (Next.js, NestJS, Python/LangGraph, Supabase, Redis, AWS EC2) that automates the full session analytics pipeline — 58% less teacher review time across 200+ concurrent jobs at 99%+ uptime, powered by a 9-agent LangGraph system.
+- **JobSwipe**: AI career platform automating the job application pipeline from scraping to submission with a swipe interface — live listings from 4 portals, sub-550ms matching across 10K+ listings, and automatic resume tailoring and submission in under 10 seconds.
+
+## Links
+
+- [Portfolio home](https://www.haiderakbar.dev/): overview, about, experience, and featured work
+- [Project archive](https://www.haiderakbar.dev/archive/): full list of projects with tech stacks and links
+- [Resume (PDF)](https://www.haiderakbar.dev/resume.pdf)
+- [GitHub](https://github.com/muhammadhaider02)
+- [LinkedIn](https://www.linkedin.com/in/haiderakbar)
+
+## Contact
+
+- Email: muhammadhaiderakbar@gmail.com

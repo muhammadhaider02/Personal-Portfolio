@@ -14,8 +14,23 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sitemap`,
-    `gatsby-plugin-robots-txt`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        // Emit sitemap-index.xml and sitemap-0.xml at the site root so the
+        // index's references and robots.txt's Sitemap line resolve correctly.
+        output: '/',
+        excludes: ['/pensieve', '/pensieve/**'],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        host: 'https://www.haiderakbar.dev',
+        sitemap: 'https://www.haiderakbar.dev/sitemap-index.xml',
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -148,19 +163,5 @@ module.exports = {
         ],
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-google-gtag`,
-    //   options: {
-    //     trackingIds: [
-    //       "G-VMC7KV6880",
-    //     ],
-    //     gtagConfig: {
-    //       anonymize_ip: true,
-    //     },
-    //     pluginConfig: {
-    //       head: true,
-    //     },
-    //   },
-    // },
   ],
 };

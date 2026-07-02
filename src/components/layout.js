@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import styled, { ThemeProvider } from 'styled-components';
 import { Head, Loader, Nav, Social, Email, Footer } from '@components';
+import LoaderContext from '@components/loaderContext';
 import { GlobalStyle, theme } from '@styles';
 
 const StyledContent = styled.div`
@@ -58,9 +59,18 @@ const Layout = ({ children, location }) => {
             Skip to Content
           </a>
 
-          {isLoading && isHome ? (
-            <Loader finishLoading={() => setIsLoading(false)} />
-          ) : (
+          <LoaderContext.Provider value={isLoading && isHome}>
+            {/* Content always renders (crawlers read it from the static HTML);
+                the loader is a fixed full-screen overlay on top of it. */}
+            {isLoading && isHome && <Loader finishLoading={() => setIsLoading(false)} />}
+
+            <noscript>
+              <style>
+                {`.loader { display: none !important; }
+                  body.hidden { overflow: auto !important; }`}
+              </style>
+            </noscript>
+
             <StyledContent>
               <Nav isHome={isHome} />
               <Social isHome={isHome} />
@@ -71,7 +81,7 @@ const Layout = ({ children, location }) => {
                 <Footer />
               </div>
             </StyledContent>
-          )}
+          </LoaderContext.Provider>
         </ThemeProvider>
       </div>
     </>
