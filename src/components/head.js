@@ -54,6 +54,12 @@ const Head = ({ title, description, image }) => {
 
       <link rel="canonical" href={seo.url} />
 
+      {/* Small sizes: full-bleed hexagon for browser tabs. Large size: the
+          circle-safe icon Google Search (min 48px) picks for results. */}
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+      <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192x192.png" />
+
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
 

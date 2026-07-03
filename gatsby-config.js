@@ -41,6 +41,10 @@ module.exports = {
         theme_color: config.colors.navy,
         display: 'minimal-ui',
         icon: 'src/images/logo.png',
+        // Tab favicons (16/32px) are declared manually in head.js with the
+        // full-bleed hexagon; the manifest icons (48px+) keep the circle-safe
+        // logo that Google's round favicon mask needs.
+        include_favicon: false,
       },
     },
     `gatsby-plugin-offline`,
