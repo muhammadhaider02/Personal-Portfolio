@@ -4,18 +4,16 @@
 
 import { useState, useEffect } from 'react';
 const QUERY = '(prefers-reduced-motion: no-preference)';
-const isRenderingOnServer = typeof window === 'undefined';
 
-const getInitialState = () =>
-  // For our initial server render, we won't know if the user
-  // prefers reduced motion, but it doesn't matter. This value
-  // will be overwritten on the client, before any animations
-  // occur.
-  isRenderingOnServer ? true : !window.matchMedia(QUERY).matches;
 function usePrefersReducedMotion() {
-  const [prefersReducedMotion, setPrefersReducedMotion] = useState(getInitialState);
+  // Default to true so the first client render matches the server-rendered
+  // HTML (SSG also renders the reduced-motion branch). Reading matchMedia
+  // during the initial render causes a hydration mismatch that can corrupt
+  // the DOM (scrambled nav). The real value is applied after mount.
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(true);
   useEffect(() => {
     const mediaQueryList = window.matchMedia(QUERY);
+    setPrefersReducedMotion(!mediaQueryList.matches);
     const listener = event => {
       setPrefersReducedMotion(!event.matches);
     };

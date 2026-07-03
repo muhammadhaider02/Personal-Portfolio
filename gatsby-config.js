@@ -47,7 +47,9 @@ module.exports = {
         include_favicon: false,
       },
     },
-    `gatsby-plugin-offline`,
+    // Unregisters the service worker previously installed by
+    // gatsby-plugin-offline so returning visitors stop getting stale pages.
+    `gatsby-plugin-remove-serviceworker`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
