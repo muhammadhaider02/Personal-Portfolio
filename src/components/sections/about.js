@@ -125,7 +125,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, [prefersReducedMotion]);
 
-  const skills = ['Python', 'n8n', 'LangChain', 'LangGraph', 'RAG', 'TypeScript', 'FastAPI', 'AWS'];
+  const skills = ['Python', 'n8n', 'Scrapling', 'LangGraph', 'RAG', 'FastAPI', 'TypeScript', 'AWS'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -136,18 +136,18 @@ const About = () => {
           <div>
             <p>
               Hello! My name is Haider and I enjoy building intelligent systems. My interest in
-              programming started back in 2018 when I decided to try modifying Arduino code for a
+              programming started back in 2017 when I decided to try modifying Arduino code for a
               smart home automation system in my school's Science Club. Turns out watching lights
-              respond to a wave of my hand taught me a lot about C++ and how code solves real
-              problems.
+              respond to a wave of my hand taught me a lot about automations and how code solves
+              real problems.
             </p>
 
             <p>
-              Fast-forward to today, I've worked at startups and remote teams across Pakistan and
-              Europe. My focus these days is building workflow automation and agentic AI systems,
-              connecting LLMs, APIs and data pipelines to replace repetitive decision-making at
-              scale, from MVPs for early-stage products to system integrations that unify platforms
-              into seamless automated workflows.
+              Fast-forward to today, I've worked at startups and remote teams across US and Europe.
+              As an AI Automation Engineer, I build workflow automations, LLM integrations and
+              agentic systems, connecting APIs and data pipelines to replace repetitive
+              decision-making at scale, from MVPs for early-stage products to system integrations
+              that unify platforms into seamless automated workflows.
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>

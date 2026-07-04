@@ -2,9 +2,9 @@ const config = require('./src/config');
 
 module.exports = {
   siteMetadata: {
-    title: 'Haider Akbar',
+    title: 'Haider Akbar | AI Automation Engineer',
     description:
-      'Haider Akbar is an AI engineer specializing in workflow automation, LLM integration and agentic systems. Building intelligent, scalable products that replace repetitive decision-making at scale.',
+      'Haider Akbar is an AI Automation Engineer specializing in workflow automation, LLM integrations and agentic systems. He builds intelligent, scalable products that replace repetitive decision-making at scale.',
     siteUrl: 'https://www.haiderakbar.dev', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
   },

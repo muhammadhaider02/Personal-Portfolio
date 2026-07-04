@@ -1,23 +1,25 @@
 # Haider Akbar
 
-> Haider Akbar (Muhammad Haider Akbar) is an AI engineer specializing in workflow automation, LLM integrations, and agentic systems. He builds intelligent, scalable products that replace repetitive decision-making at scale — from MVPs for early-stage products to system integrations that unify platforms into seamless automated workflows.
+> Haider Akbar (Muhammad Haider Akbar) is an AI Automation Engineer specializing in workflow automation, LLM integrations and agentic systems. He builds intelligent, scalable products that replace repetitive decision-making at scale, from MVPs for early-stage products to system integrations that unify platforms into seamless automated workflows.
 
-Technologies he works with most: Python, n8n, LangChain, LangGraph, RAG, TypeScript, FastAPI, AWS.
+Technologies he works with most: Python, n8n, Scrapling, LangChain, LangGraph, RAG, FastAPI, TypeScript, AWS.
 
 ## Experience
 
-- **Software Developer — Epistemy** (London, UK, remote; Sep 2025 – Feb 2026): Automated a teaching analytics pipeline end to end (58% less teacher review time), designed a Memory agent for cross-session performance context, and cut LLM API costs 39% with a Critic agent that filters low-confidence outputs.
-- **AI Engineer — DMLytics** (Islamabad, Pakistan; Feb – Jul 2025): Built flight plan generation from user-drawn boundaries (57% faster planning), automated ingestion of 300GB+ imagery on GCP (61% faster preprocessing), and engineered image alignment/tilt correction (78% fewer misaligned tiles).
-- **AI Intern — FRACK Technologies** (Islamabad, Pakistan; Sep – Oct 2024): Built a Siamese BiGRU encoder with additive attention reaching 0.8498 F1 on 14K+ legal clause pairs, cutting training time 66% over a BiLSTM baseline.
+- **AI Automation Engineer — Nysonian Inc.** (Islamabad, Pakistan; May 2026 to present): Built a brand protection platform that hunts counterfeit listings and files DMCA takedowns, protecting $500K+ in client revenue by taking down over 300 infringers. Ships brand reputation automations on n8n, from Trustpilot digests to live Reddit alerts.
+- **Lead AI Automation Engineer — FRACK Technologies** (Islamabad, Pakistan; July 2025 to present): Built a client acquisition pipeline sourcing and qualifying leads, and delivers custom workflow automations from scoping to deployment.
+- **Software Developer — Epistemy** (London, UK, remote; September to October 2025): Built an ed-tech platform cutting teacher review time by 58% via full workflow automation, with a cross-session Memory agent, a 9-agent LangGraph pipeline delivering the post-session suite in 2 minutes and a Critic agent cutting LLM API costs by 39%.
+- **AI Engineer — DMLytics** (Islamabad, Pakistan; February to July 2025): Built a drone mapping platform cutting flight planning time by 57%, accelerating 300GB+ imagery preprocessing by 61% on GCP and enabling crop analytics on 500+ acres.
 
 ## Featured Projects
 
-- **Epistemy Sessions**: AI tutoring platform (Next.js, NestJS, Python/LangGraph, Supabase, Redis, AWS EC2) that automates the full session analytics pipeline — 58% less teacher review time across 200+ concurrent jobs at 99%+ uptime, powered by a 9-agent LangGraph system.
-- **JobSwipe**: AI career platform automating the job application pipeline from scraping to submission with a swipe interface — live listings from 4 portals, sub-550ms matching across 10K+ listings, and automatic resume tailoring and submission in under 10 seconds.
+- **DeFaux**: An automated brand protection platform that hunts counterfeit product listings across the open web and files DMCA takedowns, verifying infringements with multi-signal image matching before reporting through the right enforcement channel.
+- **JobSwipe** (https://www.jobswipe.works): An AI career platform where candidates swipe through live listings matched to their resume. A four-agent LangGraph system surfaces skill gaps and quizzes, and a right swipe produces a RAG-tailored resume, a cover letter and an auto-submitted application.
+- **JobScout** (https://www.jobswipe.cloud): A fully unattended job board scraper keeping a live index of fresh listings in production, sweeping LinkedIn and Indeed across 60 curated roles with stealth browsers and delivering deduplicated, enriched data 8 times a day.
 
 ## Links
 
-- [Portfolio home](https://www.haiderakbar.dev/): overview, about, experience, and featured work
+- [Portfolio home](https://www.haiderakbar.dev/): overview, about, experience and featured work
 - [Project archive](https://www.haiderakbar.dev/archive/): full list of projects with tech stacks and links
 - [Resume (PDF)](https://www.haiderakbar.dev/resume.pdf)
 - [GitHub](https://github.com/muhammadhaider02)

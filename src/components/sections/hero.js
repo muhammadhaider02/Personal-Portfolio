@@ -67,9 +67,9 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        I'm an AI engineer specializing in workflow automation, LLM integrations and agentic
-        systems. I build intelligent, scalable products that replace repetitive decision-making at
-        scale.
+        I'm an AI Automation Engineer specializing in workflow automation, LLM integrations and
+        agentic systems. I build intelligent, scalable products that replace repetitive
+        decision-making at scale.
       </p>
     </>
   );

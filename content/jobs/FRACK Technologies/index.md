@@ -1,12 +1,11 @@
 ---
-date: '2024-10-31'
-title: 'AI Intern'
-company: 'FRACK Tech'
+date: '2025-10-31'
+title: 'Lead AI Automation Engineer'
+company: 'FRACK Tech.'
 location: 'Islamabad, Pakistan'
-range: 'September - October 2024'
-url: 'https://fracktechnologies.com/'
+range: 'July 2025 - Current'
+url: 'https://www.linkedin.com/company/frack-technologies/'
 ---
 
-- Reduced training time by 66% over the BiLSTM baseline by replacing max-pooling with learned weighting.
-- Achieved 0.8498 F1 on 14K+ legal clause pairs by building a Siamese BiGRU encoder with additive attention.
-- Prevented data leakage across 10K+ pairs by implementing hash-based splitting with TF-IDF hard negatives.
+- Built a client acquisition pipeline sourcing and qualifying leads.
+- Delivered custom workflow automations from scoping to deployment.

@@ -37,10 +37,11 @@ const Head = ({ title, description, image }) => {
   const structuredData = JSON.stringify({
     '@context': 'https://schema.org',
     '@type': 'Person',
-    name: defaultTitle,
+    name: 'Haider Akbar',
+    alternateName: 'Muhammad Haider Akbar',
     url: siteUrl,
     image: seo.image,
-    jobTitle: 'AI Engineer',
+    jobTitle: 'AI Automation Engineer',
     description: defaultDescription,
     email: `mailto:${email}`,
     sameAs: socialMedia.map(({ url }) => url),
