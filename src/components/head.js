@@ -39,6 +39,11 @@ const Head = ({ title, description, image }) => {
     '@type': 'Person',
     name: 'Haider Akbar',
     alternateName: 'Muhammad Haider Akbar',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Islamabad',
+      addressCountry: 'Pakistan',
+    },
     url: siteUrl,
     image: seo.image,
     jobTitle: 'AI Automation Engineer',

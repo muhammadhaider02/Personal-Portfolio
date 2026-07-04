@@ -144,10 +144,10 @@ const About = () => {
 
             <p>
               Fast-forward to today, I've worked at startups and remote teams across US and Europe.
-              As an AI Automation Engineer, I build workflow automations, LLM integrations and
-              agentic systems, connecting APIs and data pipelines to replace repetitive
-              decision-making at scale, from MVPs for early-stage products to system integrations
-              that unify platforms into seamless automated workflows.
+              As an AI Automation Engineer based in Islamabad, Pakistan, I build workflow
+              automations, LLM integrations and agentic systems, connecting APIs and data pipelines
+              to replace repetitive decision-making at scale, from MVPs for early-stage products to
+              system integrations that unify platforms into seamless automated workflows.
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>

@@ -1,6 +1,6 @@
 # Haider Akbar
 
-> Haider Akbar (Muhammad Haider Akbar) is an AI Automation Engineer specializing in workflow automation, LLM integrations and agentic systems. He builds intelligent, scalable products that replace repetitive decision-making at scale, from MVPs for early-stage products to system integrations that unify platforms into seamless automated workflows.
+> Haider Akbar (Muhammad Haider Akbar) is an AI Automation Engineer specializing in workflow automation, LLM integrations and agentic systems. He builds intelligent, scalable products that replace repetitive decision-making at scale, from MVPs for early-stage products to system integrations that unify platforms into seamless automated workflows. Based in Islamabad, Pakistan and working with teams worldwide.
 
 Technologies he works with most: Python, n8n, Scrapling, LangChain, LangGraph, RAG, FastAPI, TypeScript, AWS.
 
